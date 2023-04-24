@@ -371,39 +371,55 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         
-        <div class="skill-box">
-
-            <div class="contact-addres">
-                <div class="address">
-        
-            
-                <!-- <a href=""><i class="fa fa-phone" aria-hidden="true"></i></a> -->
-                <a class="btn" href="tel:+31686241137"><i class="fa fa-phone" aria-hidden="true"></i><img src="data:," alt="Call +31686241137" /></a>
-                <a class="btn" href="email:take.z70@gmail.com"><i class="fa fa-phone" aria-hidden="true"></i><img src="" alt="email take.z70@gmail.com" /></a>
-                    
+        <div class="container">
+            <div class="content">
+              <div class="left-side">
+                <div class="address details">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic">Address</div>
+                  <div class="text-one">Korenbloemstraat 55,
+                    5643 HL</div>
+                  <div class="text-two">Eindhoven, Notherlands</div>
                 </div>
+                <div class="phone details">
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="topic">Phone</div>
+                  <!-- <div class="text-one">+31  5647</div> -->
+                  <a href=""><div class="text-two">+31 686241137</div></a>
+                </div>
+                <div class="email details">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">take.z70@gmail.com</div>
+                  <!-- <div class="text-two">info.codinglab@gmail.com</div> -->
+                </div>
+              </div>
+              <div class="right-side">
+                    <div class="topic-text">Send me a message</div>
+                    <!-- <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p> -->
+                    <form action="https://formsubmit.co/el/kuxawe" method="POST">
+                        <div class="input-box">
+                            <label for="name">Your name</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Your email</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div class="input-box">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject">
+                        </div>
+                        <div class="input-box message-box">
+                            <label for="message">Meesage body</label>
+                            <textarea type="text" id="" cols="30" rows="10" name="message"></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="button" value="Send Now" >
+                        </div>
+                    </form>
             </div>
-            <!-- <div class="contact-addres">
-        
-                <form method="post" action="https://github.com/zinabu-dot/portfolio/blob/main/process.php">
-                    
-                    
-                    <div class="input-box">
-                        <input type="text" placeholder="Full Name">
-                        <input type="email" placeholder="Email Address">
-                    </div>
-
-                    <div class="input-box">
-                    
-                        <input type="tel" id = "phone" placeholder="Mobile Number" name="phone" >
-                        <input type="text" placeholder="Email Subject">
-                    </div>
-
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Type Message"></textarea>
-                    <input type="Submit" value="Send Message" class="btn">
-
-                </form>
-            </div> -->
+            </div>
         </div>
     
     </section>

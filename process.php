@@ -6,7 +6,7 @@ if(isset($_POST['submit'])) {
     // Get form data
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
+    // $phone = $_POST['phone'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
     
@@ -43,13 +43,13 @@ if(isset($_POST['submit'])) {
     
     // If no errors, send email
     if(!$error) {
-        $to = "your-email@example.com";
+        $to = "take.z70@gmail.com";
         $subject = "New Contact Us Email: $subject";
-        $body = "Name: $name\nEmail: $email\nPhone: $phone\n\n$message";
+        $body = "Name: $name\nEmail: $email\n\n$message";
         $headers = "From: $email\n";
         
         if(mail($to, $subject, $body, $headers)) {
-            $success_message = "Thank you for contacting us! We will get back to you as soon as possible.";
+            $success_message = "Thank you for contacting me! We will get back to you as soon as possible.";
         } else {
             $error_message = "Sorry, there was an error sending your message. Please try again later.";
         }
